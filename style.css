@@ -497,6 +497,7 @@ p {
     height: 100%;
     width: 100%;
     position: relative;
+    border: 10px solid rgb(0, 0, 0);
     padding: 0;
 }
 
@@ -504,7 +505,7 @@ p {
     content: '';
     position: absolute;
     left: -33px;
-    top: 200px;
+    top: 20px;
     height: 98%;
     width: 98%;
     border: 7px solid crimson;
