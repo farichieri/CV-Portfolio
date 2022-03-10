@@ -497,7 +497,7 @@ p {
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid rgb(0, 0, 0);
+    border: 20px solid rgb(0, 0, 0);
 }
 #about .col-left .about-img::after {
     content: '';
