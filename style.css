@@ -497,14 +497,14 @@ p {
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid rgb(0, 0, 0);
     padding: 0;
 }
+
 #about .col-left .about-img::after {
     content: '';
     position: absolute;
     left: -33px;
-    top: 19px;
+    top: 200px;
     height: 98%;
     width: 98%;
     border: 7px solid crimson;
