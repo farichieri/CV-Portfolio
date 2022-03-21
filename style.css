@@ -473,7 +473,7 @@ p {
 
 #projects .project-img  {
     opacity: .5;
-    transition: 1s;
+    transition: 2s;
 }
 
 #projects .project-img:hover {
@@ -621,12 +621,12 @@ p {
 }
 
 #footer .social-item img {
-    filter: grayscale(1);
-    transition: .3s ease filter;
+    transition: 1s ease filter;
+    border-radius: 50%;
 }
 
 #footer .social-item img:hover {
-    filter: grayscale(0);
+    background-color: rgba(255, 255, 255, 0.431);
 }
 
 #footer p {
