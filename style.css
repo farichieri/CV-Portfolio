@@ -412,35 +412,48 @@ p {
 
 #projects .project-info {
     position: absolute;
-    padding: 30px;
-    flex-basis: 50%;
-    color: black;
-    height: 80%;
+    padding: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.431);
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
 }
 
 #projects .project-info h1 {
-    font-size: 2rem;
-    font-weight: 500;
+    color: red;
 }
 
 #projects .project-info p {
-    color: black;
+    color: white;
+    font-size: 12px;
 }
 
 #projects a {
-    text-decoration: none;
-    color: black;
-    text-shadow: 5px 0 5px #ffff006b;
-    /* filter: drop-shadow(-10px 10px 20px #fff000); */
+    color: red;
+}
 
+#projects .project-info-title {
+    white-space: nowrap;
+}
+
+#projects .project-info-logo-div {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#projects .project-info-logo {
+    height: 30px;
+    width: 30px;
+    margin: 0;
 }
 
 #projects .project-img {
@@ -450,17 +463,6 @@ p {
     position: relative;
     margin: auto;
     padding: 15px;
-
-}
-
-#projects .project-img::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    transition: 2s;
 }
 
 #projects .project-img img {
@@ -470,13 +472,23 @@ p {
 }
 
 #projects .project-img  {
-    transition: 1s ease transform;
     opacity: .5;
+    transition: 1s;
 }
 
 #projects .project-img:hover {
-    opacity: 1;
+    opacity: 1; 
+    /* transform: scale(.9); */
 }
+
+#projects .project-img:hover .project-info{ 
+    z-index: 1;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
 
 
 /* End Projects section */
@@ -557,9 +569,17 @@ p {
 	flex-direction: column;
 }
 
-#contact .icon {
+#contact a {
     height: 50px;
     width: 50px;
+    opacity: .5;
+    transition: .3s;
+}
+
+#contact a:hover {
+    height: 50px;
+    width: 50px;
+    opacity: 1;
 }
 
 /* End Contact Section */
