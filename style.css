@@ -55,7 +55,7 @@ p {
 }
 
 .section-title span {
-    color: crimson;
+    color: rgba(73, 251, 53, 0.548);
 }
 
 .cta {
@@ -63,7 +63,7 @@ p {
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid crimson;
+    border: 2px solid rgba(73, 251, 53, 0.548);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
@@ -74,18 +74,19 @@ p {
 
 .cta:hover {
     color:white;
-    background-color: crimson;
+    background-color: rgba(73, 251, 53, 0.548);
 }
 
 .brand h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: white;
 }
 
 .brand h1 span {
-    color: crimson;
+    color: white;
 }
+
 
 /* Header Section */
 #header {
@@ -101,6 +102,7 @@ p {
     min-height: 8vh;
     background-color: rgba(31, 30, 30, 0.24);
     transition: .5s ease background-color;
+
 }
 
 #header .nav-bar {
@@ -164,7 +166,7 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-    color:crimson;
+    color:rgba(73, 251, 53, 0.548);
 }
 
 #header .hamburger {
@@ -197,7 +199,7 @@ p {
     height: 2px;
     width: 30px;
     position: relative;
-    background-color: crimson;
+    background-color: rgba(73, 251, 53, 0.548);
     z-index: -1;
 }
 #header .hamburger .bar::after,
@@ -207,7 +209,7 @@ p {
     height: 100%;
     width: 100%;
     left: 0;
-    background-color: crimson;
+    background-color: rgba(73, 251, 53, 0.548);
     transition: .3s ease;
     transition-property: top, bottom; 
 }
@@ -255,6 +257,27 @@ p {
     padding: 0 50px;
     justify-content: flex-start;
 }
+/* test */
+
+  .brand {
+    position: relative;
+  }
+  .brand span {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg);
+      color: rgba(73, 251, 53, 0.548);
+    }
+  }
 
 #hero h1 {
     display: block;
@@ -285,7 +308,7 @@ p {
     left: 0;
     height: 100%;
     width: 0%;
-    background-color: crimson;
+    background-color: rgba(73, 251, 53, 0.548);
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
 }
@@ -431,7 +454,7 @@ p {
 
 #projects .project-info-title {
     white-space: nowrap;
-    color: rgba(255, 0, 0, 0.561);
+    color: rgba(73, 251, 53, 0.548);
     text-shadow: 1px 10px 1px rgb(235, 1, 1);
 }
 
@@ -534,7 +557,7 @@ p {
     top: 20px;
     height: 98%;
     width: 98%;
-    border: 7px solid crimson;
+    border: 7px solid rgba(73, 251, 53, 0.548);
     z-index: -1;
 }
 
@@ -596,6 +619,15 @@ p {
     /* background-image: linear-gradient(50deg, #03030300 0%, rgba(255, 255, 255, 0.609) 100%); */
     background-color: rgba(255, 255, 255, 0.185);
 
+}
+
+#footer .brand-footer {
+    font-size: 20px;
+}
+
+
+#footer h1 span {
+    color: rgba(73, 251, 53, 0.548);
 }
 
 #footer .footer {
@@ -672,7 +704,7 @@ p {
 
 @keyframes text_reveal_name {
     100% {
-        color: crimson;
+        color: rgba(73, 251, 53, 0.548);
         font-weight: 500px;
     }
 }
@@ -690,6 +722,14 @@ p {
     #services .service-bottom .service-item {
         flex-basis: 30%;
         margin: 2%;
+    }
+
+    #header .brand  {
+        display: flex;
+    }
+
+   #header .brand span {
+        font-size: 25px;
     }
 }
 /* End Media Query For Phone  */
@@ -765,7 +805,7 @@ p {
         top: 34px;
         height: 98%;
         width: 98%;
-        border: 10px solid crimson;    
+        border: 10px solid rgba(73, 251, 53, 0.548);    
     }
 
     #about .col-right {
