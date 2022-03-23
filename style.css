@@ -1,4 +1,5 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
 
 
 * {
@@ -10,7 +11,7 @@
 html {
     font-size: 10px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     scroll-behavior: smooth;
     background-color: rgb(0, 0, 0);
 }
@@ -323,7 +324,6 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    
 }
 
 #services .service-item {
@@ -395,7 +395,7 @@ p {
     justify-content: center;
     flex-direction: row;
     max-width: 100%;
-
+    font-size: 30px;
 }
 
 #projects .project-item {
@@ -404,6 +404,7 @@ p {
     justify-content: center;
     flex-direction: row;
     width: 80%;
+    height: 80%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -412,22 +413,15 @@ p {
 
 #projects .project-info {
     position: absolute;
+    display: flex;
     padding: 100%;
     margin: auto;
-    display: flex;
     justify-content: center;
     flex-direction: column;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    background-color: rgba(0, 0, 0, 0.431);
-    -webkit-font-smoothing: subpixel-antialiased;
-    backface-visibility: hidden;
-}
-
-#projects .project-info h1 {
-    color: red;
 }
 
 #projects .project-info p {
@@ -435,12 +429,19 @@ p {
     font-size: 12px;
 }
 
-#projects a {
-    color: red;
-}
-
 #projects .project-info-title {
     white-space: nowrap;
+    color: rgba(255, 0, 0, 0.561);
+    text-shadow: 1px 10px 1px rgb(235, 1, 1);
+}
+
+ #projects .project-info-stack {
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0;
 }
 
 #projects .project-info-logo-div {
@@ -450,15 +451,22 @@ p {
     justify-content: space-between;
 }
 
+#projects .project-info .info {
+    color: rgba(255, 255, 255, 0.52);
+    position: relative;
+    padding: 0;
+}
+
 #projects .project-info-logo {
     height: 30px;
     width: 30px;
+    display: flex;
     margin: 0;
-}
+}  
 
 #projects .project-img {
     flex-basis: 50%;
-    height: 300px;
+    height: 100%;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -471,26 +479,12 @@ p {
     object-fit: contain;
 }
 
-#projects .project-img  {
-    opacity: .5;
-    transition: 2s;
-}
-
-#projects .project-img:hover {
-    opacity: 1; 
-    /* transform: scale(.9); */
-}
-
 #projects .project-img:hover .project-info{ 
     z-index: 1;
     text-align: center;
-    font-size: 15px;
-    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.849);
+    transition: .3s;
 }
-
-
-
-
 /* End Projects section */
 
 /* About Section */
@@ -527,7 +521,10 @@ p {
     width: 100%;
     position: relative;
     padding: 0;
-    opacity: .5;
+    /* opacity: .5; */
+}
+#about .col-left .about-img:hover {
+    background-color: red;
 }
 
 #about .col-left .about-img::after {
@@ -540,6 +537,15 @@ p {
     border: 7px solid crimson;
     z-index: -1;
 }
+
+#about a {
+    color: yellow;
+}
+
+#about a:hover {
+    font-weight: bolder;
+}
+
 /* End About Section */
 
 /* Contact Section */
