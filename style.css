@@ -409,7 +409,6 @@ p {
 
 #projects .projects-header h1{
     margin-bottom: 50px
-
 }
 
 #projects .all-projects {
@@ -547,8 +546,6 @@ p {
     opacity: .8;
     /* opacity: .5; */
 }
-
-
 
 #about a {
     color: yellow;
