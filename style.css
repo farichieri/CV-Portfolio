@@ -731,6 +731,10 @@ p {
    #header .brand span {
         font-size: 25px;
     }
+
+    #hero .hero h1 {
+        font-size: 25px;
+    }
 }
 /* End Media Query For Phone  */
 
