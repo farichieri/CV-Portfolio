@@ -455,7 +455,7 @@ p {
 #projects .project-info-title {
     white-space: nowrap;
     color: rgba(73, 251, 53, 0.548);
-    text-shadow: 1px 10px 1px rgb(235, 1, 1);
+    text-shadow: 1px 10px 1px rgba(255, 255, 255, 0.219);
 }
 
  #projects .project-info-stack {
@@ -546,8 +546,9 @@ p {
     padding: 0;
     opacity: .8;
     /* opacity: .5; */
-
 }
+
+
 
 #about a {
     color: yellow;
@@ -732,6 +733,8 @@ p {
         margin-top: 15px;
         border-radius: 20px;
     }
+
+
 }
 /* End Media Query For Phone  */
 
