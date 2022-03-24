@@ -557,7 +557,7 @@ p {
     max-height: 500px;
     text-align: center;
     padding-top: 100px;
-    padding-right: 40px;;
+    /* padding-right: 50px;; */
 }
 
 #contact .contact-item {
@@ -570,8 +570,6 @@ p {
 }
 
 #contact a {
-    height: 50px;
-    width: 50px;
     opacity: .5;
     transition: .3s;
     color: white;
@@ -583,8 +581,6 @@ p {
 }
 
 #contact a:hover {
-    height: 50px;
-    width: 50px;
     opacity: 1;
 }
 
