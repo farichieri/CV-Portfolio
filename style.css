@@ -578,14 +578,14 @@ p {
     display: flex;
     text-align: center;
     align-items: center;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
 
 #contact a:hover {
     height: 50px;
     width: 50px;
     opacity: 1;
-    transform: scale(1.1);
 }
 
 /* End Contact Section */
@@ -628,12 +628,12 @@ p {
 }
 
 #footer .social-item img {
-    transition: 1s ease filter;
+    transition: .3s, ease filter;
     border-radius: 50%;
 }
 
 #footer .social-item img:hover {
-    background-color: rgba(255, 255, 255, 0.431);
+    background-color: rgb(255, 255, 255);
 }
 
 #footer p {
