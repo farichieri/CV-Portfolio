@@ -81,6 +81,7 @@ p {
     font-size: 2rem;
     text-transform: uppercase;
     color: white;
+    letter-spacing: 5px;
 }
 
 .brand h1 span {
@@ -272,8 +273,8 @@ p {
     animation: flip 2s infinite;
     animation-delay: calc(.2s * var(--i));
     letter-spacing: 1px;
-
   }
+
   @keyframes flip {
     0%,80% {
       transform: rotateY(360deg);
@@ -609,6 +610,8 @@ p {
 
 #footer .brand-footer {
     font-size: 18px;
+    letter-spacing: 3px;
+
 }
 
 
@@ -711,7 +714,6 @@ p {
     
     .brand span {
         font-size: 1.9rem;
- 
       }
    #header .brand span {
         font-size: 25px;
