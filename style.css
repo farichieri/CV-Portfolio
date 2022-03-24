@@ -557,7 +557,9 @@ p {
     max-height: 500px;
     text-align: center;
     padding-top: 100px;
+    padding-right: 25px;;
 }
+
 #contact .contact-item {
 	width: 80%;
 	text-align: center;
