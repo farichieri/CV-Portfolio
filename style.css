@@ -278,7 +278,7 @@ p {
   @keyframes flip {
     0%,80% {
       transform: rotateY(360deg);
-      color: rgba(73, 251, 53, 0.548);
+      color: rgba(73, 251, 53, 0.815);
     }
   }
 
@@ -375,7 +375,6 @@ p {
     font-size: 2rem;
     color: white;
     margin-bottom: 10px; 
-    text-transform: uppercase;
 }
 
 #services .service-item p {
@@ -688,6 +687,10 @@ p {
     #services .service-bottom .service-item {
         flex-basis: 30%;
         margin: 2%;
+    }
+
+    #services .service-bottom .service-item h2 {
+        font-size: 15px;
     }
 
     #header .brand  {
