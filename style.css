@@ -585,6 +585,7 @@ p {
     height: 50px;
     width: 50px;
     opacity: 1;
+    transform: scale(1.1);
 }
 
 /* End Contact Section */
