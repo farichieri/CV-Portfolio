@@ -553,7 +553,7 @@ p {
 #contact .contact-items {
 	width: 100%;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     max-height: 500px;
     text-align: center;
     padding-top: 100px;
@@ -565,8 +565,10 @@ p {
 	margin: auto;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+}
+
+#contact .contact-item h2 {
+    display: flex;
 }
 
 #contact a {
@@ -574,6 +576,12 @@ p {
     width: 50px;
     opacity: .5;
     transition: .3s;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
 }
 
 #contact a:hover {
@@ -827,14 +835,6 @@ p {
 	#contact .contact-item .icon {
 		height: 50px;
 		width: 50px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
-	#contact .contact-item .contact-info {
-		width: 80%;
-		text-align: left;
-		padding-left: 20px;
 	}
     /* End Contact */
 }
