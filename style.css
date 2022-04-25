@@ -458,7 +458,6 @@ p {
 #projects .project-info-title {
     color: rgba(73, 251, 53, 0.548);
     text-shadow: 1px 10px 1px rgba(255, 255, 255, 0.219);
-    width: 350px;
 }
 
  #projects .project-info-stack {
@@ -893,6 +892,10 @@ p {
 
     /* Header */
 @media only screen and (min-width:1200px) {
+
+    .project-info-title {
+     width: 350px;
+    }
 
     #header .nav-bar {
         margin: 0px 50px 0px 50px;
