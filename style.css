@@ -456,9 +456,9 @@ p {
 }
 
 #projects .project-info-title {
-    white-space: nowrap;
     color: rgba(73, 251, 53, 0.548);
     text-shadow: 1px 10px 1px rgba(255, 255, 255, 0.219);
+    width: 350px;
 }
 
  #projects .project-info-stack {
@@ -714,7 +714,6 @@ p {
     #services .service-bottom .service-item {
         flex-basis: 30%;
         margin: 2%;
-
     }
 
     .project-info-stack {
