@@ -641,6 +641,36 @@ p {
 }
 /* End Footer */
 
+/* Resume */
+    .resume {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .resume button {
+        background-color: white;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        font-family: 'Orbitron', sans-serif;
+        border-radius: 10px;
+        background-color: green;
+        transition: .5s;
+        cursor: pointer;
+        border: none;
+    }
+
+    .resume button:hover {
+        filter: brightness(1.5);
+        box-shadow: 0 0 10px 1px white;
+    }
+    .resume button:active {
+        box-shadow: 0 0 10px 1px white;
+    }
+/* End Resume */
+
 /* Keyframes */
 @keyframes hamburger_pulse {
     0% {
