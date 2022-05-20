@@ -539,9 +539,9 @@ p {
     color: yellow;
 }
 
-#about a:hover {
+/* #about a:hover {
     font-weight: bolder;
-}
+} */
 
 /* End About Section */
 
@@ -716,12 +716,12 @@ p {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        font-size: 15px;
+        font-size: 10px;
         height: auto;
     }
 
     .project-info-logo-div {
-        height: 20px;
+        height: 19px;
     }
     
     .project-info-stack {
