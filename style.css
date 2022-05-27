@@ -36,6 +36,12 @@ a {
     text-decoration: none;
 }
 
+.demo {
+    text-align: center;
+    line-height: 0;
+    margin-bottom: -30px;
+}
+
 .container {
     min-height: 100vh;
     width: 100%;
@@ -721,6 +727,12 @@ p {
 
 /* Media Query For Phone */
 @media only screen and (max-width: 768px) {
+    .demo {
+        text-align: center;
+        line-height: 0;
+        margin-bottom: 0;
+    }
+
     #projects .all-projects {
         display: flex;
         align-items: center;
