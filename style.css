@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 .reveal {
   position: relative;
@@ -23,10 +23,28 @@
   user-select: none;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(61, 61, 61) rgba(164, 164, 164, 0.402);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(61, 61, 61);
+}
+
 html {
   font-size: 10px;
   color: white;
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   scroll-behavior: smooth;
   background-color: rgb(0, 0, 0);
 }
@@ -206,7 +224,7 @@ p {
 
 #header .hamburger:after {
   position: absolute;
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -223,7 +241,7 @@ p {
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   width: 100%;
@@ -259,7 +277,7 @@ p {
 }
 
 #hero::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -366,7 +384,7 @@ p {
 }
 
 #services .service-item::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -664,7 +682,7 @@ p {
   color: white;
   font-weight: bold;
   padding: 10px;
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   border-radius: 10px;
   background-color: green;
   transition: 0.5s;
@@ -810,8 +828,11 @@ p {
   }
 
   #about .col-left img {
-    margin-top: 15px;
-    border-radius: 20px;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: 100% 30%;
   }
 
   #footer .brand-footer {
@@ -884,13 +905,19 @@ p {
   }
 
   #about .col-left {
-    width: 600px;
-    height: 400px;
-    padding-left: 60px;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 
   #about .col-left img {
-    border-radius: 20px;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: 100% 30%;
   }
 
   #about .col-right {
@@ -964,7 +991,7 @@ p {
     font-size: 1.5rem;
   }
 
-  #header .nav-list ul a:after {
+  #header .nav-list ul a::after {
     display: none;
   }
   /* End Header */
